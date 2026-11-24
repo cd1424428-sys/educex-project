@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluaciones - EduCSex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">EduCSex | Villa Victoria</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="normativa.html">Normativa & INEGI</a>
+                <a class="nav-link" href="interactivo.html">Módulos & Chat</a>
+                <a class="nav-link active" href="evaluaciones.html">Evaluaciones</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quiz Ampliado -->
+    <div class="container my-5">
+        <div class="card shadow border-0 p-4">
+            <h2 class="text-success mb-4">Evaluación de Conocimientos: EduCSex</h2>
+            <form id="quizForm">
+                
+                <!-- Pregunta 1 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">1. ¿Qué institución colabora en Villa Victoria para brindar atención y orientación a jóvenes?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p1" value="correcto">
+                        <label class="form-check-label">IMSS Bienestar / Secretaría de Salud</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p1" value="incorrecto">
+                        <label class="form-check-label">INEGI exclusivamente</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">2. ¿Cuál es el objetivo principal de los métodos anticonceptivos modernos?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p2" value="incorrecto">
+                        <label class="form-check-label">Sustituir la comunicación familiar</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p2" value="correcto">
+                        <label class="form-check-label">Prevenir infecciones de transmisión sexual y embarazos no planeados</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">3. ¿Qué fuente oficial proporciona estadísticas sobre tasas de embarazo adolescente en la región?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p3" value="correcto">
+                        <label class="form-check-label">INEGI y datos estatales oficiales</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p3" value="incorrecto">
+                        <label class="form-check-label">Redes sociales anónimas</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">4. La prevención del embarazo adolescente es una responsabilidad...</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p4" value="incorrecto">
+                        <label class="form-check-label">Exclusiva de los centros de salud</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="p4" value="correcto">
+                        <label class="form-check-label">Compartida entre jóvenes, familia y sociedad</label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-success px-4" onclick="evaluarQuizCompleto()">Calificar Cuestionario</button>
+            </form>
+
+            <div id="resultadoQuiz" class="mt-4"></div>
+        </div>
+    </div>
+
+    <!-- Script del Quiz -->
+    <script src="js/quiz.js"></script>
+</body>
+</html>

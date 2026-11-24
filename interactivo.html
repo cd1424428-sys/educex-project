@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos Interactivos y Chat - EduCSex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">EduCSex | Villa Victoria</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="normativa.html">Normativa & INEGI</a>
+                <a class="nav-link active" href="interactivo.html">Módulos & Chat</a>
+                <a class="nav-link" href="evaluaciones.html">Evaluaciones</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-success mb-4">Mitos y Realidades sobre la Salud Sexual</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card card-h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h4 class="text-success">¿Los métodos anticonceptivos fallan siempre?</h4>
+                        <p class="text-muted">Falso. Utilizados de forma correcta y constante, métodos como el implante o el condón tienen una alta efectividad respaldada por el IMSS Bienestar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card card-h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h4 class="text-success">¿La prevención es solo tarea de las mujeres?</h4>
+                        <p class="text-muted">Falso. La salud sexual y reproductiva es una responsabilidad compartida entre hombres y mujeres jóvenes en Villa Victoria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección del Chatbot Local Mejorado -->
+        <div class="card shadow-sm border-0 mt-4">
+            <div class="card-body">
+                <h3 class="text-success mb-3">Asistente Virtual EduCSex (Chatbot)</h3>
+                <div id="chatBox" class="border rounded p-3 mb-3 bg-white" style="height: 250px; overflow-y: scroll;">
+                    <p><strong>ChatBot:</strong> ¡Hola! Estoy aquí para orientarte de forma segura sobre prevención del embarazo adolescente en Villa Victoria.</p>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="userInput" class="form-control" placeholder="Escribe tu duda (ej. metodos, centro, atencion)...">
+                    <button class="btn btn-success" id="sendBtn">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script del Chatbot -->
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
